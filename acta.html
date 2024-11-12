@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acta de Matrimonio Hello Kitty</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body>
+    <div class="acta-container">
+        <h1>Acta de Matrimonio</h1>
+        <p>¡Felicidades, <span id="name"></span>!</p>
+        <p>Has contraído matrimonio con Miguel Contreras!</p>
+        <p>Era una trampa ya te casaste conmigo jijijij</p>
+        <img id="fni" src="./images/Fnis.jpeg" alt="Hello Kitty y su pareja" class="image">
+        <h2><strong>¡Vivan felices por siempre!</strong></h2>
+        <p>Hoy en verdad quiero decirte y hacerte saber que estoy muy muy enamorado de ti Fani, lamento hacerte sentir mal</p>
+        <p>Créeme no haré promesas, sino que te demostraré el por qué estoy tan enamorado y el por qué volví hacia ti, eres el solecito de mi vida.</p>
+        <p>Eres la persona con la cual estoy seguro de querer estar toda mi vida y te lo voy a demostrar. Te amo y te amo con todo mi corazón.</p>
+        
+        <!-- Imagen de Snoopy envuelta en un enlace -->
+        <a href="https://youtu.be/QAItMep0GiA?si=L7m_s3C8v49ZrjZzI" target="_blank">
+            <img src="./images/Snoopy Love Poster.jpg" alt="Corazón" style="width: 100px; height: autopx; margin: 20px;">
+        </a>
+        <p><strong>Haz clic en la imagen</strong></p>
+    </div>
+
+    <script>
+        // Mostrar los datos de la persona
+        document.getElementById('name').textContent = localStorage.getItem('name');
+        document.getElementById('favorite-cartoon').textContent = localStorage.getItem('favoriteCartoon');
+        document.getElementById('favorite-color').textContent = localStorage.getItem('favoriteColor');
+    </script>
+</body>
+</html>
